@@ -1,0 +1,133 @@
+/***********
+	css reset 
+************/
+* {	margin: 0;	padding: 0;	list-style: none;	border: 0;	text-decoration: none;outline:0;}
+input, label {vertical-align: middle;}
+
+/* separator */
+.jfa {position:absolute; left:0px;top:0px; width:0px; height:0px; visibility:hidden;}
+.sep {margin-bottom: 30px !important;}
+.clear {clear:both;}
+.left {float:left;}
+.right {float:right;}
+.alignleft {float:left;margin-right:30px;margin-bottom:30px;}
+.alignright {float:right;margin-left:30px;margin-bottom:30px;}
+hr {display: none;}
+img, h1, h2, h3, h4, h5, h6 {line-height:110%;vertical-align: top;font-family: "trebuchet ms";}
+
+/* fixing firefox bug */
+div:after, ol:after, li:after, form:after, ul:after, dl:after,q:after {content:".";display:block;clear:both;visibility:hidden;height:0;overflow:hidden;}
+
+
+
+/***********
+	structure
+************/
+html {height: 100%;background:#a1c21e;}
+body {color:#fff;text-align: center;font: normal 10px/1.1em Arial, Tahoma, Helvetica, sans-serif;background:#a1c21e;}
+.wrap {width:940px;height:100%;margin: 0 auto;text-align:left;padding: 0 30px;position: relative;}
+.header {height:auto;position:relative;background:#fff;}
+.content {height:100%;clear:both;background:#f4f5ee; padding-bottom:60px;position: relative;}
+.col-01 {float:left; height:100%;width:610px;margin-right:30px;}
+.col-02 {float:left; height:100%;width:300px;}
+.footer {clear:both;background:#a1c21e;padding:30px 0;}
+
+
+
+
+/***********
+	header
+************/
+.header .wrap {padding: 30px;}
+.header h1 {width: 281px;height:69px;float:left;}
+.header h1 a {width: 281px;height:69px;display: block;overflow:hidden;text-indent: -9999px;background: transparent url(../img/desconferencia-logo.png) no-repeat left top;}
+.header h1 a:hover {background: transparent url(../img/desconferencia-logo.png) no-repeat left bottom;}
+.header h2 {color:#81827c;font-size:2em;text-align:right; letter-spacing: -.02em; float:right;}
+.header h2 .fe {color:#76b31e;}
+.header h2 .be {color:#3d93bf;}
+
+
+
+/***********
+	content
+************/
+
+/*** quem somos ***/
+.saiba-mais {display: inline-block; height: auto; width:240px; text-align:center; padding:10px 15px; margin:0 auto; background:#a1c21e;color:#f4f5ee; font-size:1.2em; position:absolute; top:-30px;left:45%;
+-moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-left-radius: 5px; -khtml-border-top-right-radius: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px;}
+.saiba-mais:hover{color:#f4f5ee !important;}
+.quem-somos {display: none;height:300px;position:absolute;top:0; left:0; right:0; background:#a1c21e;margin-bottom: 40px;z-index:2;}
+.quem-somos .wrap {padding: 30px 0;}
+.quem-somos-txt {width:300px;float:left;height:100%;margin-right:60px;}
+.quem-somos-txt h2 {font-size:4.8em; margin-bottom:.2em; font-weight: normal; color:#fff;letter-spacing: -.03em;}
+
+.equipe {width:580px;float:right;height:100%;padding-top:30px;}
+.equipe li {float:left; margin: 18px;}
+.equipe li a img {width:80px;height:80px;border: 5px solid #fff;
+-moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px;border-radius: 5px;
+-moz-box-shadow: 0px 1px 2px #999; -webkit-box-shadow: 0px 1px 2px #999; box-shadow: 0px 1px 2px #999;}
+.equipe li a {position:relative; width:80px;height:80px; display: block;text-decoration: none;}
+.equipe li:nth-child(2n+1) a {-webkit-transform: rotate(4deg);-moz-transform: rotate(4deg);-o-transform: rotate(4deg);}
+.equipe li:nth-child(3n+1) a{-webkit-transform: rotate(-4deg);-moz-transform: rotate(-4deg);-o-transform: rotate(-4deg);}
+.equipe li a span {display: none;}
+.equipe li a:hover span,.equipe li a:focus span{position:absolute; bottom:-40px; right:-10px;display: inline-block; text-align: center; height:auto; padding:5px; background:#2b2b2b;color:#f4f5ee; font-size:1em; font-weight: bolder;}
+.equipe li a:hover, .equipe li a:focus {
+  z-index:10;
+  -moz-transition: all .6s ease-in-out;
+  -moz-transform: rotate(0deg) scale(1.35);
+  -webkit-transition: all .6s ease-in-out;
+  -webkit-transform: rotate(0deg) scale(1.35);
+  -o-transition-duration: all .6s ease-in-out;
+  -o-transform: rotate(0deg) scale(1.35);
+}
+
+
+
+/*** destaque ***/
+.destaque {background:#2b2b2b;margin-bottom: 40px;height:300px;z-index:1;}
+.destaque .wrap {padding: 30px 0;}
+.post-preview {width:540px;float:left; height:100%;margin-right:30px;}
+.destaque .entry-title {font-size:4.8em; font-weight: normal; color:#fff;letter-spacing: -.03em;}
+.destaque .entry-title a {color:#fff;}
+.destaque .post-excerpt {width:370px;float:right;height:100%;}
+
+
+
+/*** posts ***/
+.podcast-list {height:100%;border-bottom:1px solid #b7b8b3;}
+.post {height:auto; margin-bottom:40px;}
+.entry-title {}
+.entry-title a{color:#2b2b2b;text-decoration: none;}
+.entry-title a:hover{color:#a1c21e;text-decoration: underline;}
+.the-tags {}
+.the-tags li {float:left; margin-right:5px;}
+.the-tags li a{color:#81827c;font-size:1.2em; line-height:1.2em;}
+.share {}
+
+
+
+/*** tagcloud ***/
+.tagcloud {clear:both;margin-bottom:40px;}
+.tagcloud a{color:#777; font-size:1.4em;margin:5px;margin-left:0;}
+.tagcloud a:hover {text-decoration: underline;}
+
+
+
+/***********
+	elements
+************/
+a:hover {color:#a1c21e !important;text-decoration: underline;}
+p {font-size:1.4em; margin-bottom:1em; line-height:1.3em;letter-spacing: -.01em;}
+h2 {color:#2b2b2b; font-size:3em; font-weight: normal; margin-bottom:.5em; line-height:1.2em;letter-spacing: -.03em;}
+h3 {color:#81827c; font-size:3em; font-weight: normal; margin-bottom:.5em; line-height:1.2em;letter-spacing: -.03em;}
+
+
+
+/***********
+	footer
+************/
+
+.footer h1 {width: 281px;height:68px;float:left;}
+.footer h1 a {width: 281px;height:68px;display: block;overflow:hidden;text-indent: -9999px;background: transparent url(../img/desconferencia-logo-02.png) no-repeat left top;}
+.footer .wrap>div {float:right;}
+.footer .wrap>div span {clear:both; color:#f4f5ee; font-size:1.2em;}

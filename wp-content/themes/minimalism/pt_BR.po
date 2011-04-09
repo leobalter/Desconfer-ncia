@@ -1,0 +1,655 @@
+# kubrick theme pot file.
+# Copyright (C) 2007 WordPress
+# This file is distributed under the same license as the kubrick theme package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.6\n"
+"Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
+"POT-Creation-Date: 2008-07-11 21:16+0700\n"
+"PO-Revision-Date: 2010-08-04 22:19-0300\n"
+"Last-Translator: Leonardo Balter <leonardo.balter@gmail.com>\n"
+"Language-Team: de.wordpress.org <translations@wpde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: 404.php:5
+msgid "Error 404 - Not Found"
+msgstr "Erro 404 - Não Encontrado"
+
+#: archive.php:9
+#, php-format
+msgid "Archive for the &#8216;%s&#8217; Category"
+msgstr "Arquivo para categoria &#8216;%s&#8217;"
+
+#: archive.php:11
+#, php-format
+msgid "Posts Tagged &#8216;%s&#8217;"
+msgstr "Tags: &#8222;%s&#8220;"
+
+#: archive.php:13
+#, php-format
+msgid "Archive for %s|Daily archive page"
+msgstr "Página de arquivo para %s|Diário"
+
+#: archive.php:13
+#: comments.php:37
+#: index.php:11
+msgid "F jS, Y"
+msgstr "d/m/Y"
+
+#: archive.php:15
+#, php-format
+msgid "Archive for %s|Monthly archive page"
+msgstr "Página de arquivo para %s|Mensal"
+
+#: archive.php:15
+#: sidebar.php:27
+msgid "F, Y"
+msgstr "m/Y"
+
+#: archive.php:17
+#, php-format
+msgid "Archive for %s|Yearly archive page"
+msgstr "Página de arquivo para %s|Anual"
+
+#: archive.php:17
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:19
+msgid "Author Archive"
+msgstr "Arquivo do Autor"
+
+#: archive.php:21
+msgid "Blog Archives"
+msgstr "Arquivos do Blog"
+
+#: archive.php:26
+#: archive.php:46
+#: index.php:23
+#: search.php:10
+#: search.php:27
+msgid "&laquo; Older Entries"
+msgstr "&laquo; Artigos Anteriores"
+
+#: archive.php:27
+#: archive.php:47
+#: index.php:24
+#: search.php:11
+#: search.php:28
+msgid "Newer Entries &raquo;"
+msgstr "Antigos Posterioes &raquo;"
+
+#: archive.php:32
+#: index.php:10
+#: search.php:18
+#, php-format
+msgid "Permanent Link to %s"
+msgstr "Link Permanente para %s"
+
+#: archive.php:33
+#: attachment.php:28
+#: image.php:25
+#: sidebar.php:24
+#: single.php:27
+msgid "l, F jS, Y"
+msgstr "l, d/m/y"
+
+#: archive.php:39
+#: index.php:17
+#: search.php:21
+#: single.php:19
+msgid "Tags:"
+msgstr "Tags: "
+
+#: archive.php:39
+#: index.php:17
+#: search.php:21
+#, php-format
+msgid "Posted in %s"
+msgstr "Publicado em %s"
+
+#: archive.php:39
+#: index.php:17
+#: search.php:21
+msgid "Edit"
+msgstr "Editar"
+
+#: archive.php:39
+#: index.php:17
+#: search.php:21
+msgid "No Comments &#187;"
+msgstr "Nenhum Comentário &#187;"
+
+#: archive.php:39
+#: index.php:17
+#: search.php:21
+msgid "1 Comment &#187;"
+msgstr "1 Comentário &#187;"
+
+#: archive.php:39
+#: index.php:17
+#: search.php:21
+msgid "% Comments &#187;"
+msgstr "% Comentários &#187;"
+
+#: archive.php:39
+#: index.php:17
+#: search.php:21
+msgid "Comments Closed"
+msgstr "Comentários Encerrados"
+
+#: archive.php:52
+#: index.php:29
+msgid "Not Found"
+msgstr "Não Encontrado"
+
+#: archives.php:13
+msgid "Archives by Month:"
+msgstr "Arquivos por Mês"
+
+#: archives.php:18
+msgid "Archives by Subject:"
+msgstr "Arquivos por Tema:"
+
+#: attachment.php:14
+#, php-format
+msgid "Permanent Link: %s"
+msgstr "Link Permanente: %s"
+
+#: attachment.php:18
+#: image.php:13
+#: index.php:14
+#: single.php:16
+msgid "Read the rest of this entry &raquo;"
+msgstr "Ler mais &raquo;"
+
+#: attachment.php:20
+#: image.php:15
+#: page.php:11
+#: single.php:18
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: attachment.php:28
+#: single.php:27
+#, php-format
+msgid "This entry was posted %1$s on %2$s at %3$s and is filed under %4$s."
+msgstr "Esse artigo foi publicado %1$s em %2$s às %3$s sob %4$s."
+
+#: attachment.php:29
+#: image.php:27
+#: single.php:28
+#, php-format
+msgid "You can follow any responses to this entry through the <a href='%s'>RSS 2.0</a> feed."
+msgstr "Você pode acompanhar as respostas deste artigo via <a href='%s'>RSS-2.0</a> Feed."
+
+#: attachment.php:33
+#: image.php:31
+#: single.php:32
+#, php-format
+msgid "You can <a href=\"#respond\">leave a response</a>, or <a href=\"%s\" rel=\"trackback\">trackback</a> from your own site."
+msgstr "Você pode <a href=\"#respond\">deixar uma resposta</a> ou um <a href=\"%s\" rel=\"trackback\">Trackback</a> do seu site."
+
+#: attachment.php:37
+#: image.php:35
+#: single.php:36
+#, php-format
+msgid "Responses are currently closed, but you can <a href=\"%s\" rel=\"trackback\">trackback</a> from your own site."
+msgstr "Respostas estão encerradas, mas você pode deixar um <a href=\"%s\" rel=\"trackback\">Trackback</a> do seu site."
+
+#: attachment.php:41
+#: image.php:39
+#: single.php:40
+msgid "You can skip to the end and leave a response. Pinging is currently not allowed."
+msgstr "Você pode ir pro final e deixar uma <a href=\"#respond\">resposta</a>, Pingbacks/Trackbacks não estão liberados."
+
+#: attachment.php:45
+#: image.php:43
+#: single.php:44
+msgid "Both comments and pings are currently closed."
+msgstr "Tanto comentários quanto pings não são permitidos."
+
+#: attachment.php:47
+#: image.php:45
+#: page.php:16
+msgid "Edit this entry."
+msgstr "Editar este artigo."
+
+#: attachment.php:59
+msgid "Sorry, no attachments matched your criteria."
+msgstr "Desculpa, nenhum anexo combina com o seu critério."
+
+#: comments.php:9
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Esse artigo é protegido por senha. Insira a senha para ver os comentários."
+
+#: comments.php:23
+msgid "No Responses"
+msgstr "Nenhuma Resposta"
+
+#: comments.php:23
+msgid "One Response"
+msgstr "Uma Resposta"
+
+#: comments.php:23
+msgid "% Responses"
+msgstr "% Respostas"
+
+#: comments.php:23
+#, php-format
+msgid "to &#8220;%s&#8221;"
+msgstr "para &#8222;%s&#8220;"
+
+#: comments.php:31
+#, php-format
+msgid "<cite>%s</cite> Says:"
+msgstr "<cite>%s</cite> disse:"
+
+#: comments.php:33
+msgid "Your comment is awaiting moderation."
+msgstr "Seu comentário aguarda moderação."
+
+#: comments.php:37
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s em %2$s"
+
+#: comments.php:37
+msgid "edit"
+msgstr "editar"
+
+#: comments.php:59
+msgid "Comments are closed."
+msgstr "Comentários estão encerrados."
+
+#: comments.php:67
+msgid "Leave a Reply"
+msgstr "Deixe uma Resposta"
+
+#: comments.php:70
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Você precisa estar <a href=\"%s\">logado</a> para comentar."
+
+#: comments.php:77
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>."
+msgstr "Logado como <a href=\"%1$s\">%2$s</a>."
+
+#: comments.php:77
+msgid "Log out of this account"
+msgstr "Deslogar-se dessa conta"
+
+#: comments.php:77
+msgid "Log out &raquo;"
+msgstr "Deslogar-se &raquo;"
+
+#: comments.php:82
+#: comments-popup.php:64
+msgid "Name"
+msgstr "Nome"
+
+#: comments.php:82
+#: comments.php:85
+msgid "(required)"
+msgstr "(necessário)"
+
+#: comments.php:85
+msgid "Mail (will not be published)"
+msgstr "Email (não será publicado)"
+
+#: comments.php:88
+msgid "Website"
+msgstr "Site"
+
+#: comments.php:92
+#, php-format
+msgid "<strong>XHTML:</strong> You can use these tags: <code>%s</code>"
+msgstr "<strong>XHTML:</strong> Pode utilizar essas tags: <code>%s</code>"
+
+#: comments.php:96
+msgid "Submit Comment"
+msgstr "Enviar Comentário"
+
+#: comments-popup.php:9
+#, php-format
+msgid "%1$s - Comments on %2$s"
+msgstr "%1$s - Comentários em %2$s"
+
+#: comments-popup.php:22
+msgid "Comments"
+msgstr "Comentários"
+
+#: comments-popup.php:24
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr> feed for comments on this post."
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr> Feed para comentários nesse artigo."
+
+#: comments-popup.php:27
+#, php-format
+msgid "The <abbr title=\"Universal Resource Locator\">URL</abbr> to TrackBack this entry is: <em>%s</em>"
+msgstr "O <abbr title=\"Universal Resource Locator\">URL</abbr> para TrackBack desse artigo é: <em>%s</em>"
+
+#: comments-popup.php:45
+msgid "Comment"
+msgstr "Comentar"
+
+#: comments-popup.php:45
+msgid "Trackback"
+msgstr "Trackback"
+
+#: comments-popup.php:45
+msgid "Pingback"
+msgstr "Pingback"
+
+#: comments-popup.php:45
+#, php-format
+msgid "by %1$s &#8212; %2$s @ <a href=\"#comment-%3$s\">%4$s</a>"
+msgstr "por %1$s &#8212; %2$s @ <a href=\"#comment-%3$s\">%4$s</a>"
+
+#: comments-popup.php:51
+msgid "No comments yet."
+msgstr "Nenhum comentário ainda."
+
+#: comments-popup.php:55
+msgid "Leave a comment"
+msgstr "Comente"
+
+#: comments-popup.php:56
+#, php-format
+msgid "Line and paragraph breaks automatic, e-mail address never displayed, <acronym title=\"Hypertext Markup Language\">HTML</acronym> allowed: <code>%s</code>"
+msgstr "Line and paragraph breaks automatic, e-mail address never displayed, <acronym title=\"Hypertext Markup Language\">HTML</acronym> allowed: <code>%s</code>"
+
+#: comments-popup.php:60
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out &raquo;</a>"
+msgstr "Logado como <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\">Deslogar-se &raquo;</a>"
+
+#: comments-popup.php:71
+msgid "E-mail"
+msgstr "Email"
+
+#: comments-popup.php:76
+msgid "<abbr title=\"Universal Resource Locator\">URL</abbr>"
+msgstr "<abbr title=\"Universal Resource Locator\">URL</abbr>"
+
+#: comments-popup.php:81
+msgid "Your Comment"
+msgstr "Seu comentário"
+
+#: comments-popup.php:87
+msgid "Say It!"
+msgstr "Diga!"
+
+#: comments-popup.php:92
+msgid "Sorry, the comment form is closed at this time."
+msgstr "Desculpa, seu formulário de comentário está fechado nesse momento."
+
+#: comments-popup.php:97
+msgid "Close this window."
+msgstr "Fechar essa janela."
+
+#: comments-popup.php:105
+#, php-format
+msgid "Powered by <a href=\"%s\" title=\"Powered by WordPress, state-of-the-art semantic personal publishing platform\"><strong>WordPress</strong></a>"
+msgstr "Powered by <a href=\"%s\" title=\"Wordpress\"><strong>WordPress</strong></a>"
+
+#: footer.php:6
+#, php-format
+msgid "%1$s is proudly powered by %2$s"
+msgstr "%1$s orgulhosamente feito em %2$s"
+
+#: footer.php:8
+#, php-format
+msgid "%1$s and %2$s."
+msgstr "%1$s e %2$s."
+
+#: footer.php:8
+msgid "Entries (RSS)"
+msgstr "Entradas (RSS)"
+
+#: footer.php:8
+msgid "Comments (RSS)"
+msgstr "Comentários (RSS)"
+
+#: footer.php:9
+#, php-format
+msgid "%d queries. %s seconds."
+msgstr "%d chamadas. %s segundos."
+
+#: functions.php:149
+msgid "Customize Header"
+msgstr "Customizar Header"
+
+#: functions.php:149
+#: functions.php:363
+msgid "Header Image and Color"
+msgstr "Imagem e Cor do Header"
+
+#: functions.php:162
+msgid "Close Color Picker"
+msgstr "Fechar ColorPicker"
+
+#: functions.php:359
+msgid "Options saved."
+msgstr "Opções salvas."
+
+#: functions.php:376
+#: functions.php:383
+msgid "Save"
+msgstr "Salvar"
+
+#: functions.php:377
+msgid "Font Color:"
+msgstr "Cor de Fonte:"
+
+#: functions.php:377
+#, php-format
+msgid "Any CSS color (%s or %s or %s)"
+msgstr "Qualquer cor de CSS (%s ou %s ou %s)"
+
+#: functions.php:378
+msgid "Upper Color:"
+msgstr "Cor superior:"
+
+#: functions.php:378
+#: functions.php:379
+#, php-format
+msgid "HEX only (%s or %s)"
+msgstr "Apenas hexadecimal (%s ou %s)"
+
+#: functions.php:379
+msgid "Lower Color:"
+msgstr "Cor inferior:"
+
+#: functions.php:381
+msgid "Toggle Text"
+msgstr "Alternar texto"
+
+#: functions.php:382
+msgid "Use Defaults"
+msgstr "Usar Padrão"
+
+#: functions.php:391
+msgid "Font Color"
+msgstr "Cor de Fonte"
+
+#: functions.php:392
+msgid "Upper Color"
+msgstr "Cor Superior"
+
+#: functions.php:393
+msgid "Lower Color"
+msgstr "Cor Inferior"
+
+#: functions.php:394
+msgid "Revert"
+msgstr "Reverter"
+
+#: functions.php:395
+msgid "Advanced"
+msgstr "Avançado"
+
+#: functions.php:402
+msgid "Update Header &raquo;"
+msgstr "Atualizar Header &raquo;"
+
+#: functions.php:408
+msgid "Font Color (CSS):"
+msgstr "Cor de Fonte (CSS):"
+
+#: functions.php:409
+msgid "Upper Color (HEX):"
+msgstr "Cor Superior (HEX):"
+
+#: functions.php:410
+msgid "Lower Color (HEX):"
+msgstr "Cor Inferior (HEX):"
+
+#: functions.php:411
+msgid "Select Default Colors"
+msgstr "Selecionar Cores Padrão"
+
+#: functions.php:412
+msgid "Toggle Text Display"
+msgstr "Alternar Visualização de Texto"
+
+#: header.php:9
+msgid "&raquo; Blog Archive"
+msgstr "&raquo; Arquivo"
+
+#: header.php:14
+#, php-format
+msgid "%s RSS Feed"
+msgstr "%s RSS Feed"
+
+#: image.php:25
+#, php-format
+msgid "This entry was posted on %1$s at %2$s and is filed under %3$s."
+msgstr "Esse artigo foi publicado em %1$s às %2$s sob %3$s."
+
+#: image.php:58
+#: single.php:58
+msgid "Sorry, no posts matched your criteria."
+msgstr "Desculpa, nenhum artigo combina com o seu critério."
+
+#: index.php:30
+msgid "Sorry, but you are looking for something that isn&#8217;t here."
+msgstr "Desculpa, mas você está procurando por algo que não está aqui."
+
+#: links.php:11
+msgid "Links:"
+msgstr "Links:"
+
+#: page.php:9
+msgid "Read the rest of this page &raquo;"
+msgstr "Ler mais &raquo;"
+
+#: searchform.php:2
+msgid "Search for:"
+msgstr "Buscar por:"
+
+#: searchform.php:4
+msgid "Search"
+msgstr "Buscar"
+
+#: search.php:7
+msgid "Search Results"
+msgstr "Resultados de Busca"
+
+#: search.php:33
+msgid "No posts found. Try a different search?"
+msgstr "Nenhum artigo encontrado. Deseja tentar uma nova busca?"
+
+#: sidebar.php:10
+msgid "Author"
+msgstr "Autor"
+
+#: sidebar.php:21
+#, php-format
+msgid "You are currently browsing the archives for the %s category."
+msgstr "Você está navegando pelos arquivos da categoria %s."
+
+#: sidebar.php:24
+#, php-format
+msgid "You are currently browsing the <a href=\"%1$s/\">%2$s</a> blog archives for the day %3$s."
+msgstr "Você está navegando pelos arquivos de <a href=\"%1$s/\">%2$s</a> para o dia %3$s."
+
+#: sidebar.php:27
+#, php-format
+msgid "You are currently browsing the <a href=\"%1$s/\">%2$s</a> blog archives for %3$s."
+msgstr "Você está navegando pelos arquivos de <a href=\"%1$s/\">%2$s</a> para %3$s."
+
+#: sidebar.php:30
+#, php-format
+msgid "You are currently browsing the <a href=\"%1$s/\">%2$s</a> blog archives for the year %3$s."
+msgstr "Você está navegando pelos arquivos de <a href=\"%1$s/\">%2$s</a> para o ano %3$s."
+
+#: sidebar.php:33
+#, php-format
+msgid "You have searched the <a href=\"%1$s/\">%2$s</a> blog archives for <strong>&#8216;%3$s&#8217;</strong>. If you are unable to find anything in these search results, you can try one of these links."
+msgstr "Você buscou pelo arquivo de <a href=\"%1$s/\">%2$s</a> para <strong>&#8216;%3$s&#8217;</strong>. Se você não puder encontrar nada nesse resultado de busca, você pode tentar um desses links."
+
+#: sidebar.php:36
+#, php-format
+msgid "You are currently browsing the <a href=\"%1$s/\">%2$s</a> blog archives."
+msgstr "Você está navegando pelos arquivos de <a href=\"%1$s/\">%2$s</a>."
+
+#: sidebar.php:42
+msgid "Pages"
+msgstr "Páginas"
+
+#: sidebar.php:44
+msgid "Archives"
+msgstr "Arquivos"
+
+#: sidebar.php:50
+msgid "Categories"
+msgstr "Categorias"
+
+#: sidebar.php:55
+msgid "Meta"
+msgstr "Meta"
+
+#: sidebar.php:59
+msgid "This page validates as XHTML 1.0 Transitional"
+msgstr "Essa página valida como XHTML 1.0 Transitional"
+
+#: sidebar.php:59
+msgid "Valid <abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr>"
+msgstr "<abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr> válido."
+
+#: sidebar.php:60
+msgid "XHTML Friends Network"
+msgstr "XHTML Friends Network"
+
+#: sidebar.php:60
+msgid "XFN"
+msgstr "XFN"
+
+#: sidebar.php:61
+msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr "Produzido em WordPress."
+
+#: single.php:46
+msgid "Edit this entry"
+msgstr "Editar esse artigo"
+
+#~ msgid ""
+#~ "Powered by <a href=\"%s\" title=\"Powered by WordPress, state-of-the-art "
+#~ "semantic personal publishing platform\"><strong>Wordpress</strong></a>"
+#~ msgstr ""
+#~ "<a href=\"%s\" title=\"WordPress, die f&uuml;hrende Weblog-Anwendung"
+#~ "\"><strong>WordPress</strong></a>"
+
+#~ msgid "Logout &raquo;"
+#~ msgstr "Abmelden &raquo;"
+
+#~ msgid ""
+#~ "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out "
+#~ "of this account\">Logout &raquo;</a>"
+#~ msgstr ""
+#~ "Angemeldet als <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\">Abmelden "
+#~ "&raquo;</a>"
