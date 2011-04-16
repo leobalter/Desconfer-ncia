@@ -169,7 +169,7 @@
 
                         </header>
 
-                        <div class="podcast"><?php the_content(); ?></div>
+                        <div class="podcast"><?php the_excerpt(); ?></div>
 
                         <footer>
                             <?php the_tags('<ul class="the-tags clearfix"><li>','</li><li>', '</li></ul>');?>
