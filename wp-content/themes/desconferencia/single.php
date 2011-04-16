@@ -1,12 +1,54 @@
+<?php get_header(); ?>
 
-
-<!-- header -->
-<div class="header">
+<div id="single" class="content clearfix">
 	<div class="wrap">
-        <h1><a href="#" title="Desconferência - Podcast sobre desenvolvimento front-end e back-end">Desconferência - Podcast sobre desenvolvimento front-end e back-end</a></h1>
-        <h2>O que você quer saber sobre o<br />desenvolvimento <strong class="fe">front-end</strong> e <strong class="be">back-end</strong>?</h2>
-    </div>
-</div>
-<!-- /header -->
+        <section class="col-01">
+        <?php if (have_posts()) : ?>
+            <?php while (have_posts()) : the_post(); ?>
 
-<hr />
+            <article class="post">
+                <header>
+                    <h2 class="entry-title">
+                        <a title="<?php the_title_attribute(); ?>" rel="bookmark"
+                           href="<?php the_permalink(); ?>">
+                            <?php the_title(); ?>
+                        </a>
+                    </h2>
+
+                    <aside class="clearfix">
+                        <p class="small"><?php the_time('j \d\e F \d\e Y') ?></p>
+
+                        <p class="commentCount"><?php comments_popup_link('Nenhum comentário »', '1 Comentário »', '% Comentários »'); ?></p>
+                    </aside>
+                    <aside class="share clearfix">
+                        <a href="http://twitter.com/share"
+                           class="twitter-share-button"
+                           data-url="<?php the_permalink() ?>"
+                           data-via="desconfweb">
+                            Tweet
+                        </a>
+                        <fb:like href="<?php the_permalink() ?>" show_faces="false" width="400"
+                                 font=""></fb:like>
+                    </aside>
+
+                </header>
+
+                <div class="podcast"><?php the_content(); ?></div>
+
+                <footer>
+                    <?php the_tags('<ul class="the-tags clearfix"><li>','</li><li>', '</li></ul>');?>
+                </footer>
+
+            </article>
+
+        <?php endwhile; endif; ?>
+            </section>
+
+        <?php get_sidebar(); ?>
+    </div>
+
+
+</div><!-- eo .content -->
+
+
+<?php get_footer(); ?>

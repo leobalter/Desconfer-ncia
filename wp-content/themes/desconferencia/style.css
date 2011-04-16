@@ -247,7 +247,6 @@ html {
 }
 
 body {
-    color: #fff;
     text-align: center;
     font: normal 10px/1.1em Arial, Tahoma, Helvetica, sans-serif;
     background: #a1c21e;
@@ -405,6 +404,8 @@ body {
     float: right;
     height: 100%;
     padding-top: 30px;
+    margin-left: 0;
+    list-style: none;
 }
 
 .equipe li {
@@ -474,14 +475,15 @@ body {
 }
 
 /*** destaque ***/
-.destaque {
+#destaque {
     background: #2b2b2b;
     margin-bottom: 40px;
     height: 300px;
     z-index: 1;
+    color: #FFF;
 }
 
-.destaque .wrap {
+#destaque .wrap {
     padding: 30px 0;
 }
 
@@ -492,32 +494,42 @@ body {
     margin-right: 30px;
 }
 
-.destaque .entry-title {
-    font-size: 4.8em;
+#destaque .entry-title {
+    font-size: 42px;
     font-weight: normal;
     color: #fff;
     letter-spacing: -.03em;
 }
 
-.destaque .entry-title a {
+#destaque .entry-title a {
     color: #fff;
 }
 
-.destaque .post-excerpt {
+#destaque .post-excerpt {
     width: 370px;
     float: right;
     height: 100%;
 }
 
+#fbLike {
+    top: 3px;
+}
+
 /*** posts ***/
 .podcast-list {
     height: 100%;
-    border-bottom: 1px solid #b7b8b3;
+    /*border-bottom: 1px solid #b7b8b3;*/
 }
 
-.post {
+article.post {
     height: auto;
     margin-bottom: 40px;
+    border-bottom: 1px solid #b7b8b3;
+    padding-bottom: 10px;
+}
+
+#single article.post {
+    border-bottom: none;
 }
 
 .entry-title {
@@ -580,7 +592,7 @@ a:hover {
 }
 
 p {
-    font-size: 1.4em;
+    font-size: 14px;
     margin-bottom: 1em;
     line-height: 1.3em;
     letter-spacing: -.01em;
@@ -631,4 +643,40 @@ h3 {
     clear: both;
     color: #f4f5ee;
     font-size: 1.2em;
+}
+
+/*******
+ Sidebar
+ *******/
+
+#sidebarWidgets {
+    margin-left: 0;
+    list-style: none;
+}
+
+/******
+ Asides
+ ******/
+
+p.commentCount {
+    float: right;
+    margin-bottom: 6px;
+}
+
+p.small {
+    font-size: 12px;
+    float: left;
+    margin-bottom: 6px;
+}
+
+aside.share {
+    margin-bottom: 20px;
+}
+
+/*******
+ single
+ ******/
+
+#single {
+    padding-top: 30px;
 }

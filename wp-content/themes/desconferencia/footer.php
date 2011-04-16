@@ -1,18 +1,13 @@
-        <hr/>
 
         <!-- footer -->
-        <footer>
+        <footer class="clearfix">
             <div class="wrap">
-                <h1><a href="#" title="Desconferência - Podcast sobre desenvolvimento front-end e back-end">Desconferência -
-                    Podcast sobre desenvolvimento front-end e back-end</a></h1>
+                <h1>
+                    <a href="http://www.desconferencia.com.br" title="Desconferência - Podcast sobre tecnologia com muito humor">Desconferência - Podcast sobre tecnologia com muito humor</a>
+                </h1>
 
                 <div>
-                    <ul>
-                        <li><a href="#" title=""></a></li>
-                        <li><a href="#" title=""></a></li>
-                        <li><a href="#" title=""></a></li>
-                    </ul>
-                    <span>Desconferencia 2011 todos os direitos reservados.</span>
+                    <span>Desconferência 2011 todos os direitos reservados.</span>
                 </div>
             </div>
         </footer>
@@ -37,6 +32,11 @@
             s.parentNode.insertBefore(g, s)
         }(document, "script"));
     </script>
+
+    <?php // facebook & twitter scripts ?>
+    <script src="http://connect.facebook.net/pt_BR/all.js#xfbml=1"></script>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
     <?php wp_footer(); ?>
 </body>
 </html>

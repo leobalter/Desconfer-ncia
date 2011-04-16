@@ -35,105 +35,134 @@
     </section>
     <!-- /quem somos -->
 
+    <?php if (is_home()) : ?>
+
+    <?php
+        // faço query apenas para último artigo
+
+        $queryParams = array(
+            'posts_per_page' => 1,
+            'paged' => 1,
+        );
+
+        query_posts( $queryParams );
+
+    ?>
+    <?php if (have_posts()) : the_post(); ?>
     <!-- destaque -->
-    <section class="destaque">
+    <section id="destaque">
         <div class="wrap">
-            <div class="entry-content">
+            <article class="entry-content">
 
                 <!-- titulo, player do podcast, tags e share -->
                 <div class="post-preview">
-                    <h2 class="entry-title"><a title="Criando um Checklist amigável com CSS, jQuery e em xHTML."
-                                               rel="bookmark"
-                                               href="http://bernarddeluna.com/blog/xhtml/criando-um-checklist-amigavel-com-css-jquery-e-em-xhtml">Criando
-                        um Checklist amigável com CSS, jQuery e em xHTML.</a></h2>
+                    <header>
+                        <h2 class="entry-title">
+                            <a title="<?php the_title_attribute(); ?>" rel="bookmark" href="<?php the_permalink(); ?>">
+                                <?php the_title(); ?>
+                            </a>
+                        </h2>
+                        <aside class="clearfix">
+                            <p class="small"><?php the_time('j \d\e F \d\e Y') ?></p>
+                            <p class="commentCount"><?php comments_popup_link('Nenhum comentário »', '1 Coentário »', '% Comentários »'); ?></p>
+                        </aside>
 
-                    <div class="podcast"></div>
-                    <ul class="the-tags">
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/css">css</a>,</li>
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/jquery">jquery</a>,</li>
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/marcello-manso">marcello manso</a>,
-                        </li>
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/xhtml">xhtml</a>.</li>
-                    </ul>
-                    <div class="share"></div>
+                        <aside class="share clearfix">
+                            <a href="http://twitter.com/share"
+                               class="twitter-share-button"
+                               data-url="<?php the_permalink() ?>"
+                               data-via="desconfweb">
+                                Tweet
+                            </a>
+                            <fb:like id="fbLike" href="<?php the_permalink() ?>" show_faces="false" width="400" layout="button_count" font=""></fb:like>
+                        </aside>
+
+                        <?php the_tags('<ul class="the-tags  clearfix"><li>',',</li><li>', '</li></ul>');?>
+                    </header>
                 </div>
                 <!-- / titulo, player do podcast, tags e share -->
 
                 <!-- resumo -->
                 <div class="post-excerpt">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non sem elit, quis luctus ipsum.
-                        Quisque vel commodo mauris. Morbi urna diam, congue a dictum id, rutrum nec justo. Morbi
-                        urna diam, congue a dictum id, Aenean sem risusuctus ipsum. Quisque vel commodo mauris.</p>
 
-                    <p>Aenean sem risusuctus ipsum. Quisque vel commodo mauris. Morbi urna diam, congue a dictum id,
-                        rutrum nec justo. Morbi urna diam, congue a dictum id.</p>
+                    <?php the_excerpt(); ?>
+
                 </div>
                 <!-- /resumo -->
-            </div>
+            </article>
         </div>
     </section>
     <!-- /destaque -->
+    <?php endif; ?>
+
+    <?php
+
+        // atributos para listagem comum de posts
+
+        wp_reset_query(); // recupero query_posts original
+
+        $queryNewParams = array(
+            'offset' => 1,
+            'paged=' . get_query_var( 'page' )
+        );
+
+        global $wp_query;
+        $queryParams = array_merge( $wp_query->query, $queryNewParams );
+
+        query_posts( $queryParams );
+
+    ?>
+
+    <?php endif; // is_home => query_posts especial só existe se for home mesmo ?>
 
     <div class="wrap">
         <div class="col-01">
             <!-- podcast-list -->
             <section class="podcast-list sep">
-                <h3>Podcasts anteriores</h3>
+                <?php if (have_posts()) : ?>
+                    <h3>Podcasts anteriores</h3>
 
-                <div class="post">
-                    <h2 class="entry-title"><a title="Criando um Checklist amigável com CSS, jQuery e em xHTML."
-                                               rel="bookmark"
-                                               href="http://bernarddeluna.com/blog/xhtml/criando-um-checklist-amigavel-com-css-jquery-e-em-xhtml">Criando
-                        um Checklist amigável com CSS, jQuery e em xHTML.</a></h2>
+                    <?php while (have_posts()) : the_post(); ?>
 
-                    <div class="podcast"></div>
-                    <ul class="the-tags">
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/css">css</a>,</li>
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/jquery">jquery</a>,</li>
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/marcello-manso">marcello manso</a>,
-                        </li>
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/xhtml">xhtml</a>.</li>
-                    </ul>
-                    <div class="share"></div>
-                </div>
-                <div class="post">
-                    <h2 class="entry-title"><a title="Criando um Checklist amigável com CSS, jQuery e em xHTML."
-                                               rel="bookmark"
-                                               href="http://bernarddeluna.com/blog/xhtml/criando-um-checklist-amigavel-com-css-jquery-e-em-xhtml">Criando
-                        um Checklist amigável com CSS, jQuery e em xHTML.</a></h2>
+                    <article class="post">
+                        <header>
+                            <h2 class="entry-title">
+                                <a title="<?php the_title_attribute(); ?>" rel="bookmark"
+                                   href="<?php the_permalink(); ?>">
+                                    <?php the_title(); ?>
+                                </a>
+                            </h2>
 
-                    <div class="podcast"></div>
-                    <ul class="the-tags">
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/css">css</a>,</li>
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/jquery">jquery</a>,</li>
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/marcello-manso">marcello manso</a>,
-                        </li>
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/xhtml">xhtml</a>.</li>
-                    </ul>
-                    <div class="share"></div>
-                </div>
-                <div class="post">
-                    <h2 class="entry-title"><a title="Criando um Checklist amigável com CSS, jQuery e em xHTML."
-                                               rel="bookmark"
-                                               href="http://bernarddeluna.com/blog/xhtml/criando-um-checklist-amigavel-com-css-jquery-e-em-xhtml">Criando
-                        um Checklist amigável com CSS, jQuery e em xHTML.</a></h2>
+                            <aside class="clearfix">
+                                <p class="small"><?php the_time('j \d\e F \d\e Y') ?></p>
 
-                    <div class="podcast"></div>
-                    <ul class="the-tags">
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/css">css</a>,</li>
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/jquery">jquery</a>,</li>
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/marcello-manso">marcello manso</a>,
-                        </li>
-                        <li><a rel="tag" href="http://bernarddeluna.com/blog/tag/xhtml">xhtml</a>.</li>
-                    </ul>
-                    <div class="share"></div>
-                </div>
+                                <p class="commentCount"><?php comments_popup_link('Nenhum comentário »', '1 Comentário »', '% Comentários »'); ?></p>
+                            </aside>
+                            <aside class="share clearfix">
+                                <a href="http://twitter.com/share"
+                                   class="twitter-share-button"
+                                   data-url="<?php the_permalink() ?>"
+                                   data-via="desconfweb">
+                                    Tweet
+                                </a>
+                                <fb:like href="<?php the_permalink() ?>" show_faces="false" width="450" font=""></fb:like>
+                            </aside>
+
+                        </header>
+
+                        <div class="podcast"><?php the_content(); ?></div>
+
+                        <footer>
+                            <?php the_tags('<ul class="the-tags clearfix"><li>','</li><li>', '</li></ul>');?>
+                        </footer>
+
+                    </article>
+
+                <?php endwhile; endif; ?>
             </section>
             <!-- /podcast-list -->
 
-            <hr/>
-
-
+            <?php /*
             <!-- tagcloud -->
             <div class="tagcloud sep">
                 <h3>Sobre o que nós mais falamos</h3>
@@ -143,15 +172,12 @@
                 </div>
             </div>
             <!-- /tagcloud -->
+
+            */?>
         </div>
 
-        <hr/>
 
-        <div class="col-02">
-            <div><img src="img/banner.jpg" alt="banner"/></div>
-            <div></div>
-            <div></div>
-        </div>
+        <?php get_sidebar(); ?>
     </div>
 </div>
 <!-- eo .content -->
