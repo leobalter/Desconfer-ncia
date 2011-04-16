@@ -37,8 +37,13 @@
 
                 <footer>
                     <?php the_tags('<ul class="the-tags clearfix"><li>','</li><li>', '</li></ul>');?>
+
+
                 </footer>
 
+                <aside id="comentarios">
+                    <?php comments_template(); ?>
+                </aside>
             </article>
 
         <?php endwhile; endif; ?>

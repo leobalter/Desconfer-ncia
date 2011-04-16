@@ -15,20 +15,39 @@
                     diam, congue a dictum id, Aenean sem risusuctus ipsum.</p>
             </div>
             <ul class="equipe">
-                <li><a href="http://www.bernarddeluna.com" title="Bernard De Luna"><img src="img/img-bernard.jpg"
-                                                                                        alt="Bernard De Luna"/><span>@bernarddeluna</span></a>
+                <li>
+                    <a href="http://www.bernarddeluna.com" title="Bernard De Luna">
+                        <img src="<?php bloginfo('template_url'); ?>/img/img-bernard.jpg" alt="Bernard De Luna"/>
+                        <span>@bernarddeluna</span>
+                    </a>
                 </li>
-                <li><a href="http://www.bernarddeluna.com" title="Bernard De Luna"><img src="img/img-bernard.jpg"
-                                                                                        alt="Bernard De Luna"/><span>@bernarddeluna</span></a>
+
+                <li>
+                    <a href="http://leobalter.net" title="Leo Balter">
+                        <img src="<?php bloginfo('template_url'); ?>/img/img-leonardo.jpg" alt="Leo Balter"/>
+                        <span>@leobalter</span>
+                    </a>
                 </li>
-                <li><a href="http://www.bernarddeluna.com" title="Bernard De Luna"><img src="img/img-bernard.jpg"
-                                                                                        alt="Bernard De Luna"/><span>@bernarddeluna</span></a>
+
+                <li>
+                    <a href="http://suissacorp.com.br/suissa" title="Jean 'Suissa' Nascimento">
+                        <img src="<?php bloginfo('template_url'); ?>/img/img-suissa.jpeg" alt="Jean 'Suissa' Nascimento"/>
+                        <span>@osuissa</span>
+                    </a>
                 </li>
-                <li><a href="http://www.bernarddeluna.com" title="Bernard De Luna"><img src="img/img-bernard.jpg"
-                                                                                        alt="Bernard De Luna"/><span>@bernarddeluna</span></a>
+
+                <li>
+                    <a href="http://jaydson.org" title="Jaydson Gomes">
+                        <img src="<?php bloginfo('template_url'); ?>/img/img-jaydson.png" alt="Jaydson Gomes"/>
+                        <span>@jaydson</span>
+                    </a>
                 </li>
-                <li><a href="http://www.bernarddeluna.com" title="Bernard De Luna"><img src="img/img-bernard.jpg"
-                                                                                        alt="Bernard De Luna"/><span>@bernarddeluna</span></a>
+
+                <li>
+                    <a href="http://felipenmoura.org" title="Felipe Moura">
+                        <img src="<?php bloginfo('template_url'); ?>/img/img-felipe.jpg" alt="Felipe Moura"/>
+                        <span>@felipenmoura</span>
+                    </a>
                 </li>
             </ul>
         </div>

@@ -187,10 +187,10 @@ input:valid, textarea:valid {
 }
 
 input:invalid, textarea:invalid {
-    border-radius: 1px;
-    -moz-box-shadow: 0px 0px 5px red;
-    -webkit-box-shadow: 0px 0px 5px red;
-    box-shadow: 0px 0px 5px red;
+    /*border-radius: 1px;*/
+    -moz-box-shadow: 0px 0px 3px red;
+    -webkit-box-shadow: 0px 0px 3px red;
+    box-shadow: 0px 0px 3px red;
 }
 
 .no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
@@ -247,8 +247,6 @@ html {
 }
 
 body {
-    text-align: center;
-    font: normal 10px/1.1em Arial, Tahoma, Helvetica, sans-serif;
     background: #a1c21e;
 }
 
@@ -346,14 +344,14 @@ body {
     height: auto;
     width: 240px;
     text-align: center;
-    padding: 10px 15px;
+    padding: 8px 15px;
     margin: 0 auto;
-    background: #a1c21e;
-    color: #f4f5ee;
-    font-size: 1.2em;
+    background: #A1C21E;
+    color: #F4F5EE;
+    font-size: 12px;
     position: absolute;
     top: -30px;
-    left: 45%;
+    left: 42%;
     -moz-border-radius-topleft: 5px;
     -moz-border-radius-topright: 5px;
     -webkit-border-top-left-radius: 5px;
@@ -362,6 +360,7 @@ body {
     -khtml-border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    text-decoration: none;
 }
 
 .saiba-mais:hover {
@@ -387,12 +386,11 @@ body {
 .quem-somos-txt {
     width: 300px;
     float: left;
-    height: 100%;
     margin-right: 60px;
 }
 
 .quem-somos-txt h2 {
-    font-size: 4.8em;
+    font-size: 42px;
     margin-bottom: .2em;
     font-weight: normal;
     color: #fff;
@@ -526,6 +524,9 @@ article.post {
     margin-bottom: 40px;
     border-bottom: 1px solid #b7b8b3;
     padding-bottom: 10px;
+    margin-bottom: 1em;
+    line-height: 1.3em;
+    letter-spacing: -.01em;
 }
 
 #single article.post {
@@ -559,8 +560,9 @@ article.post {
 
 .the-tags li a {
     color: #81827c;
-    font-size: 1.2em;
+    font-size: 12px;
     line-height: 1.2em;
+    text-decoration: none;
 }
 
 .share {
@@ -592,15 +594,16 @@ a:hover {
 }
 
 p {
-    font-size: 14px;
-    margin-bottom: 1em;
-    line-height: 1.3em;
-    letter-spacing: -.01em;
+font-size: 14px;
+margin-bottom: 0.6em;
+line-height: 1.3em;
+letter-spacing: -.01em;
+margin-top: 0.4em;
 }
 
 h2 {
     color: #2b2b2b;
-    font-size: 3em;
+    font-size: 32px;
     font-weight: normal;
     margin-bottom: .5em;
     line-height: 1.2em;
@@ -609,7 +612,7 @@ h2 {
 
 h3 {
     color: #81827c;
-    font-size: 3em;
+    font-size: 24px;
     font-weight: normal;
     margin-bottom: .5em;
     line-height: 1.2em;
@@ -654,6 +657,19 @@ h3 {
     list-style: none;
 }
 
+#sidebarWidgets li.widget {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+#sidebarWidgets h2.widgettitle {
+    font-size: 18px;
+}
+
+#s {
+    width: 220px;
+}
+
 /******
  Asides
  ******/
@@ -679,4 +695,73 @@ aside.share {
 
 #single {
     padding-top: 30px;
+}
+
+/*******
+ coments
+ *******/
+
+#comentarios {
+    width: 100%;
+    margin-top: 40px;
+}
+
+#comment {
+    width: 520px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    min-height: 250px;
+}
+
+#comentarios input {
+    padding: 4px;
+    min-width: 250px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+
+}
+
+#author {
+    float: left;
+}
+
+#email {
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#submit {
+    background: #A1C21E;
+    color: white;
+    border: none !important;
+    border-radius: 16px !important;
+}
+
+.commentEntry {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ddd;
+}
+
+.avatarAndName img {
+    float: left;
+
+}
+
+.avatarAndName cite {
+    float: left;
+    margin-left: 10px;
+    padding: 0 12px;
+    display: block;
+    line-height: 32px;
+    background: #DDD;
+    border-radius: 6px;
+    width: 475px;
+}
+
+#commentList {
+    margin-left: 0;
+    max-width: 542px;
 }

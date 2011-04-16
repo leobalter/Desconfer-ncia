@@ -13,101 +13,97 @@ if (!empty($post->post_password)) { // if there's a password
     }
 }
 
-/* This variable is for alternating comment background */
-$oddcomment = 'class="alt" ';
 ?>
 
 <!-- You can start editing here. -->
 
 <?php if ($comments) : ?>
-<h3 id="comments"><?php comments_number('Nenhum comentário', 'Um comentário', '% Comentários');?> <?php printf('para &#8220;%s&#8221;', the_title('', '', false)); ?></h3>
+<h3 id="comments">
+    <?php comments_number('Nenhum comentário', 'Um comentário', '% Comentários');?> <?php printf('para &#8220;%s&#8221;', the_title('', '', false)); ?></h3>
 
-<ol class="commentlist">
+    <ul id="commentList">
 
-    <?php foreach ($comments as $comment) : ?>
+        <?php foreach ($comments as $comment) : ?>
 
-    <li <?php echo $oddcomment; ?>id="comment-<?php comment_ID() ?>">
-        <?php echo get_avatar($comment, 32); ?>
-        <?php printf(__('<cite>%s</cite> Says:', 'minimalism'), get_comment_author_link()); ?>
-        <?php if ($comment->comment_approved == '0') : ?>
-        <em><?php _e('Your comment is awaiting moderation.', 'minimalism'); ?></em>
-        <?php endif; ?>
-        <br/>
+            <li id="comment-<?php comment_ID() ?>" class="commentEntry">
+                <p class="avatarAndName clearfix">
+                    <?php echo get_avatar($comment, 32); ?>
+                    <cite><?php comment_author_link() ?></cite>
+                </p>
 
-        <small class="commentmetadata"><a href="#comment-<?php comment_ID() ?>"
-                                          title=""><?php printf(__('%1$s at %2$s', 'minimalism'), get_comment_date(__('F jS, Y', 'minimalism')), get_comment_time()); ?></a> <?php edit_comment_link(__('edit', 'minimalism'), '&nbsp;&nbsp;', ''); ?>
-        </small>
+                <?php if ($comment->comment_approved == '0') : ?>
+                    <em id="awaitingBlock">Comentário aguardando moderação.</em>
+                <?php endif; ?>
 
-        <?php comment_text() ?>
+                <aside class="commentText">
+                    <small class="commentmetadata">
+                        <a href="#comment-<?php comment_ID() ?>"
+                              title="">Em <?php comment_date() ?> às <?php comment_time() ?></a> <?php edit_comment_link('Editar', '&nbsp;&nbsp;', ''); ?>
+                    </small>
+                </aside>
 
-    </li>
+                <section class="coment_text">
+                    <?php comment_text() ?>
+                </section>
 
-    <?php
-     /* Changes every other comment to a different class */
-    $oddcomment = (empty($oddcomment)) ? 'class="alt" ' : '';
-    ?>
+            </li>
 
-    <?php endforeach; /* end for each comment */ ?>
+        <?php endforeach; /* end for each comment */ ?>
 
-</ol>
+    </ul>
 
 <?php else : // this is displayed if there are no comments so far ?>
 
-<?php if ('open' == $post->comment_status) : ?>
-    <!-- If comments are open, but there are no comments. -->
-
-    <?php else : // comments are closed ?>
-    <!-- If comments are closed. -->
-    <p class="nocomments"><?php _e('Comments are closed.', 'minimalism'); ?></p>
-
+    <?php if ('open' !== $post->comment_status) : ?>
+        <p class="nocomments">Comentários estão encerrados</p>
     <?php endif; ?>
+
 <?php endif; ?>
 
 
 <?php if ('open' == $post->comment_status) : ?>
 
-<h3 id="respond"><?php _e('Leave a Reply', 'minimalism'); ?></h3>
+    <h3 id="respond">Comente!</h3>
 
-<?php if (get_option('comment_registration') && !$user_ID) : ?>
-    <p><?php printf(__('You must be <a href="%s">logged in</a> to post a comment.', 'minimalism'), get_option('siteurl') . '/wp-login.php?redirect_to=' . urlencode(get_permalink())); ?></p>
+    <?php if (get_option('comment_registration') && !$user_ID) : ?>
+        <p><?php printf("Você precisa estar <a href=\"%s\">logado</a> para comentar.", get_option('siteurl') . '/wp-login.php?redirect_to=' . urlencode(get_permalink())); ?></p>
     <?php else : ?>
 
     <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 
-        <?php if ($user_ID) : ?>
+        <?php if (false && $user_ID) : ?>
 
-        <p><?php printf(__('Logged in as <a href="%1$s">%2$s</a>.', 'minimalism'), get_option('siteurl') . '/wp-admin/profile.php', $user_identity); ?>
-            <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout"
-               title="<?php _e('Log out of this account', 'minimalism'); ?>"><?php _e('Log out &raquo;', 'minimalism'); ?></a>
-        </p>
+            <p><?php printf(__('Logged in as <a href="%1$s">%2$s</a>.', 'minimalism'), get_option('siteurl') . '/wp-admin/profile.php', $user_identity); ?>
+                <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout"
+                   title="<?php _e('Log out of this account', 'minimalism'); ?>"><?php _e('Log out &raquo;', 'minimalism'); ?></a>
+            </p>
 
         <?php else : ?>
 
-        <p><input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22"
-                  tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
-            <label for="author">
-                <small><?php _e('Name', 'minimalism'); ?> <?php if ($req) _e("(required)", "kubrick"); ?></small>
-            </label></p>
+            <p class="clearfix">
+                <input type="text" name="author" id="author"
+                       value="<?php echo $comment_author; ?>" tabindex="1" required placeholder="Nome" />
 
-        <p><input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22"
-                  tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
-            <label for="email">
-                <small><?php _e('Mail (will not be published)', 'minimalism'); ?> <?php if ($req) _e("(required)", "kubrick"); ?></small>
-            </label></p>
+                <input type="email" name="email" id="email"
+                       value="<?php echo $comment_author_email; ?>" tabindex="2" required placeholder="Email" />
+            </p>
 
-        <p><input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3"/>
-            <label for="url">
-                <small><?php _e('Website', 'minimalism'); ?></small>
-            </label></p>
-
+            <?php
+            /*
+                <p>
+                    <input type="url" name="url" id="url"
+                           value="<?php echo $comment_author_url; ?>" tabindex="3" placeholder="Site" />
+                </p>
+            */
+            ?>
         <?php endif; ?>
 
-        <!--<p><small><?php printf(__('<strong>XHTML:</strong> You can use these tags: <code>%s</code>', 'minimalism'), allowed_tags()); ?></small></p>-->
+        <p>
+            <textarea name="comment" id="comment" tabindex="4" required ></textarea>
+        </p>
 
-        <p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
-
-        <p><input name="submit" type="submit" id="submit" tabindex="5"
-                  value="<?php _e('Submit Comment', 'minimalism'); ?>"/>
+        <p>
+            <input name="submit" type="submit" id="submit" tabindex="5" value="Enviar comentário"/>
             <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>"/>
         </p>
         <?php do_action('comment_form', $post->ID); ?>
