@@ -15,6 +15,17 @@
 
     </div> <!-- eo #main -->
 
+
+    <div id="browsers">Seu browser está desatualizado! Atualize ou baixe um melhor.
+        <nav>
+            <ul>
+                <li><a href="http://www.opera.com/browser/download/" title="Download do Opera">Opera</a></li>
+                <li><a href="http://www.google.com/chrome/?hl=pt-BR" title="Download do Chrome">Chrome</a></li>
+                <li><a href="http://br.mozdev.org/download/" title="Download do Firefox">Firefox</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <!--[if lt IE 7 ]>
       <script src="<?php bloginfo('template_url'); ?>/js/dd_belatedpng.js"></script>
       <script>DD_belatedPNG.fix("img, .png_bg");</script>

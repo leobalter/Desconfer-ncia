@@ -39,18 +39,6 @@
 
 <body>
 
-<!--[if lte IE 8]>
-<section id="browsers">Seu browser está desatualizado! Atualize ou baixe um melhor.
-    <nav>
-        <ul>
-            <li><a href="http://www.opera.com/browser/download/" title="Download do Opera">Opera</a></li>
-            <li><a href="http://www.google.com/chrome/?hl=pt-BR" title="Download do Chrome">Chrome</a></li>
-            <li><a href="http://br.mozdev.org/download/" title="Download do Firefox">Firefox</a></li>
-        </ul>
-    </nav>
-</section>
-<![endif]-->
-
 <div id="main" role="main">
     <header>
         <div class="wrap clearfix">

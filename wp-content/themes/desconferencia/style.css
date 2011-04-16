@@ -534,6 +534,7 @@ article.post {
 }
 
 .entry-title {
+    margin-bottom: 4px;
 }
 
 .entry-title a {
@@ -675,8 +676,9 @@ h3 {
  ******/
 
 p.commentCount {
-    float: right;
+    float: left;
     margin-bottom: 6px;
+    margin-left: 12px;
 }
 
 p.small {
@@ -764,4 +766,32 @@ aside.share {
 #commentList {
     margin-left: 0;
     max-width: 542px;
+    list-style: none;
+}
+
+
+/******** browsers ********/
+
+#browsers {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background: white;
+    padding: 20px 0;
+    border-top: 2px solid #CCC;
+    z-index: 1000;
+    width: 100%;
+
+    display: none;
+}
+
+.ie7 #browsers,
+.ie6 #browsers,
+.ie8 #browsers,
+.no-js #browsers {
+    display: block !important;
+}
+
+.ie7 #main, .ie6 #main, .ie8 #main {
+    padding-bottom: 100px;
 }
