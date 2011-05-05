@@ -9,7 +9,7 @@
 
     <title><?php wp_title(' | ', 1, 'right'); bloginfo('name'); ?></title>
     <meta name="description" content="Desconferência - Podcast sobre desenvolvimento front-end e back-end"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=980px, initial-scale=1.0, default-scale=1.0">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 

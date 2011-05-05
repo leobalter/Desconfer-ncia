@@ -28,7 +28,7 @@
                             Tweet
                         </a>
                         <fb:like href="<?php the_permalink() ?>" show_faces="false" width="400"
-                                 font="" send="true"></fb:like>
+                                 font="" send="true" class="fbLike"></fb:like>
                     </aside>
 
                 </header>

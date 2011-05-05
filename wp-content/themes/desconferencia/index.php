@@ -91,7 +91,7 @@
                                data-via="desconfweb">
                                 Tweet
                             </a>
-                            <fb:like id="fbLike" href="<?php the_permalink() ?>" show_faces="false" width="400" layout="button_count" font="" send="true"></fb:like>
+                            <fb:like class="fbLike" href="<?php the_permalink() ?>" show_faces="false" width="400" layout="button_count" font="" send="true"></fb:like>
                         </aside>
 
                         <?php the_tags('<ul class="the-tags  clearfix"><li>',',</li><li>', '</li></ul>');?>
@@ -162,7 +162,7 @@
                                    data-via="desconfweb">
                                     Tweet
                                 </a>
-                                <fb:like href="<?php the_permalink() ?>" show_faces="false" width="450" font="" send="true"></fb:like>
+                                <fb:like class="fbLike" href="<?php the_permalink() ?>" show_faces="false" width="450" font="" send="true"></fb:like>
                             </aside>
 
                         </header>
