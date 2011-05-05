@@ -12,8 +12,8 @@
         </li>
 
         <li class="widget widget-text">
-            <p><a href="#" onclick="return false;">Assine pelo iTunes</a></p>
-            <p><a href="#" onclick="return false;" rel="alternate" type="application/rss+xml">Assine via RSS</a></p>
+            <p><a href="itpc://feeds.feedburner.com/desconferencia" onclick="return false;">Assine pelo iTunes</a></p>
+            <p><a href="http://feeds.feedburner.com/desconferencia" onclick="return false;" rel="alternate" type="application/rss+xml">Assine via RSS</a></p>
             <form id="formEmail" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=desconferencia', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
                 <p>Assine pelo email:</p>
                 <p><input type="text" style="width:240px" name="email"></p>
@@ -22,7 +22,6 @@
                 <input type="submit" value="Assinar">
             </form>
         </li>
-
         <?php (function_exists('dynamic_sidebar') && dynamic_sidebar() ); ?>
 
         <li>

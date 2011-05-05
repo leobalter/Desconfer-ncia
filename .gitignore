@@ -1,0 +1,8 @@
+.DS_Store
+.idea/
+wp-includes/
+wp-admin/
+wp-config*
+index.php
+wp-adctivate.php
+license.txt

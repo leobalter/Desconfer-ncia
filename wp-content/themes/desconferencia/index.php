@@ -10,9 +10,7 @@
             <div class="quem-somos-txt">
                 <h2>Quem somos</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non sem elit, quis luctus ipsum.
-                    Quisque vel commodo mauris. Morbi urna diam, congue a dictum id, rutrum nec justo. Morbi urna
-                    diam, congue a dictum id, Aenean sem risusuctus ipsum.</p>
+                <p>O Desconferência é um projeto informal com a missão de comentar assuntos ligados ao desenvolvimento web de forma descontraída, seja front-end ou back-end. É feito por profissionais conhecidos da área e conta sempre com excelentes convidados.</p>
             </div>
             <ul class="equipe">
                 <li>
@@ -93,7 +91,7 @@
                                data-via="desconfweb">
                                 Tweet
                             </a>
-                            <fb:like id="fbLike" href="<?php the_permalink() ?>" show_faces="false" width="400" layout="button_count" font=""></fb:like>
+                            <fb:like id="fbLike" href="<?php the_permalink() ?>" show_faces="false" width="400" layout="button_count" font="" send="true"></fb:like>
                         </aside>
 
                         <?php the_tags('<ul class="the-tags  clearfix"><li>',',</li><li>', '</li></ul>');?>
@@ -164,7 +162,7 @@
                                    data-via="desconfweb">
                                     Tweet
                                 </a>
-                                <fb:like href="<?php the_permalink() ?>" show_faces="false" width="450" font=""></fb:like>
+                                <fb:like href="<?php the_permalink() ?>" show_faces="false" width="450" font="" send="true"></fb:like>
                             </aside>
 
                         </header>
